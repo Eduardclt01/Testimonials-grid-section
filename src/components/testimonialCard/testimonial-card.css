@@ -1,0 +1,52 @@
+.testimonial-container{
+  background-color: rgb(71, 79, 197);
+  height: 100%;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.testimonial-container__purple{
+  background-color: rgb(150, 0, 236);
+  color: white;
+}
+
+.testimonial-container__grey{
+  background-color: rgb(155, 155, 155);
+  color: white;
+}
+
+.testimonial-container__white{
+  background-color: white;
+}
+
+.testimonial-container__dark-grey{
+  background-color: rgb(56, 56, 56);
+  color: white;
+}
+
+.testimonial__header--name{
+  font-size: 0.9rem;
+}
+
+.testimonial__header--role{
+  font-size: 0.8rem;
+  color: rgb(192, 192, 192);
+}
+
+.testimonial__body--heading{
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.testimonial__body--content{
+  font-weight: light;
+}
+
+
+.quotation-mark{
+  position: absolute;
+  right: 10rem;
+  top: 0.3rem;
+}

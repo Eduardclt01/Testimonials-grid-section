@@ -1,0 +1,25 @@
+/* .testimonial-grid{
+width: auto;
+} */
+.cell{
+  padding: 1rem;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.cell-2{
+  flex-grow: 3;
+}
+
+.cell-10{
+  flex-grow: 9;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+}
