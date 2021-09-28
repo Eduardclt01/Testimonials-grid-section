@@ -4,8 +4,7 @@ import QuotationMark from '../../assets/icons/bg-pattern-quotation.svg'
 function TestimonialCard(props) {
   return (
     <div className={'testimonial-container ' + 'testimonial-container__'+props.testimonial.theme}>
-    <img className={props.testimonial.theme == 'purple' ? 'quotation-mark' : 'hide'} src={QuotationMark} />
-
+      <img className={props.testimonial.theme == 'purple' ? 'quotation-mark' : 'hide'} src={QuotationMark} />
       <div className='padding-small'>
         <div className='testimonial__header'>
           <div className='testimonial__header--name'>

@@ -33,6 +33,10 @@
   color: rgb(192, 192, 192);
 }
 
+.testimonial__body{
+  position: relative;
+}
+
 .testimonial__body--heading{
   font-size: 1.6rem;
   font-weight: bold;
@@ -49,4 +53,5 @@
   position: absolute;
   right: 10rem;
   top: 0.3rem;
+  opacity: 0.5;
 }

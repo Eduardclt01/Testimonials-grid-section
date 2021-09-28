@@ -1,25 +1,34 @@
-/* .testimonial-grid{
-width: auto;
-} */
-.cell{
-  padding: 1rem;
-}
-
 .row{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-.cell-2{
-  flex-grow: 3;
+.cell-small{
+  grid-column: span 4;
 }
 
-.cell-10{
-  flex-grow: 9;
+.cell-large{
+  grid-column: span 8;
 }
 
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column;
+@media (max-width: 1200px) {
+  .cell-small{
+    grid-column: span 5;
+  }
+
+  .cell-large{
+    grid-column: span 7;
   }
 }
+
+
+@media (max-width: 800px) {
+  .cell-small{
+    grid-column: span 12;
+  }
+
+  .cell-large{
+    grid-column: span 12;
+  }
+}
+
