@@ -44,22 +44,9 @@ export const AppContextWrapper = (props) => {
     }
   });
 
-  function setBillAmount(amount) {
-    setState(function(state) {
-      return {
-        ...state,
-        test: amount
-      };
-    });
-  }
-
-
-  const [actions, setAppActions] = React.useState({
-
-  });
 
   return (
-    <AppContext.Provider value={{ state, actions }}>
+    <AppContext.Provider value={{ state }}>
       {props.children}
     </AppContext.Provider>
   );
