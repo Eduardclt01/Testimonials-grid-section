@@ -3,31 +3,32 @@ import './testimonial-grid.css'
 
 function TestimonialGrid(props) {
   return (
-    <div className='testimonial-grid grid'>
-      <div className='row'>
-        <div className='cell-large'>
-
-          <div className='row'>
-            <div className='cell-large padding-xsmall'>
-              <TestimonialCard testimonial={props.testimonials[0]}></TestimonialCard>
-            </div>
-            <div className='cell-small padding-xsmall'>
-              <TestimonialCard testimonial={props.testimonials[1]}></TestimonialCard>
-            </div>
-          </div>
-
-          <div className='row'>
-            <div className='cell-small padding-xsmall'>
-              <TestimonialCard testimonial={props.testimonials[2]}></TestimonialCard>
-            </div>
-            <div className='cell-large padding-xsmall'>
-              <TestimonialCard testimonial={props.testimonials[3]}></TestimonialCard>
-            </div>
+    <div className={props.className}>
+      <div class="testimonial-grid">
+        <div class="testimonial-grid-item testimonial-grid-item--1">
+          <div class="testimonial-card">
+            <TestimonialCard testimonial={props.testimonials[0]}></TestimonialCard>
           </div>
         </div>
-
-        <div className='cell-small padding-xsmall'>
-          <TestimonialCard testimonial={props.testimonials[4]}></TestimonialCard>
+        <div class="testimonial-grid-item testimonial-grid-item--2">
+          <div class="testimonial-card">
+            <TestimonialCard testimonial={props.testimonials[1]}></TestimonialCard>
+          </div>
+        </div>
+        <div class="testimonial-grid-item testimonial-grid-item--3">
+          <div class="testimonial-card">
+            <TestimonialCard testimonial={props.testimonials[2]}></TestimonialCard>
+          </div>
+        </div>
+        <div class="testimonial-grid-item testimonial-grid-item--4">
+          <div class="testimonial-card">
+            <TestimonialCard testimonial={props.testimonials[3]}></TestimonialCard>
+          </div>
+        </div>
+        <div class="testimonial-grid-item testimonial-grid-item--5">
+          <div class="testimonial-card">
+            <TestimonialCard testimonial={props.testimonials[4]}></TestimonialCard>
+          </div>
         </div>
       </div>
     </div>

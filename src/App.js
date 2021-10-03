@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <TestimonialGrid testimonials={appContext.state.testimonials}></TestimonialGrid>
+      <TestimonialGrid className='App__testimonial-grid' testimonials={appContext.state.testimonials}></TestimonialGrid>
     </div>
   );
 }
