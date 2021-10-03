@@ -1,0 +1,29 @@
+.App__testimonial-grid{
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.hide{
+  display: none;
+}
+
+.padding-xsmall{
+  padding: .5rem;
+}
+
+.padding-small{
+  padding: 1.5rem
+}
+
+@media (max-width: 1200px) {
+  .testimonial-grid {
+    width: 85%;;
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonial-grid {
+    width: 90%;;
+  }
+}

@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { AppContext } from "./AppContext.js";
+import TestimonialGrid from './components/testimonialGrid/TestimonialGrid.js';
+
+import './css/App.css'
 
 function App() {
+  const appContext = React.useContext(AppContext);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TestimonialGrid className='App__testimonial-grid' testimonials={appContext.state.testimonials}></TestimonialGrid>
     </div>
   );
 }
